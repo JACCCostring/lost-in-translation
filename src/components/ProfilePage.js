@@ -97,8 +97,11 @@ export default function ProfilePage(){
              <Link to='/'>
              <img src={iconGoBack} className="icon-back-profile" alt=""></img>
              </Link> 
-            {/* user name */}
-            <p className="user-name-profile">{user}</p>
+            {/* user name 
+                splitting user name and take just the first name
+                to avoid so long names in the UI
+            */}
+            <p className="user-name-profile">{user.split(' ')[0]}</p>
             <p className="logout-btn-profile" onClick={logOutUser}>Log Out</p>
             <p className="icon-profile-title-profile">Back</p>
             {/* line */}

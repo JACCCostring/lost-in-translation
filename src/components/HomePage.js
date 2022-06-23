@@ -34,11 +34,6 @@ export default function HomePage()
     // function called when click event happens
     function authenticateUser()
     {
-        // split the name when its to long, for UI show 
-        // purpuse, but anyway the original name its going 
-        // to be save in the API data
-        let splittedName = userName.split(' ')
-
        fetch(usersEndPoint)
        .then(data => data.json())
        .then(jsData => {
@@ -49,7 +44,7 @@ export default function HomePage()
                 // name exist in API data
                 alert(`user ${userName} is already registered`);
                 //set user name, the first of the array of strings
-                setUser(splittedName[0])
+                setUser(userName)
                 //login
                 setLogin(true)
                 //set user to session
@@ -67,16 +62,12 @@ export default function HomePage()
    //and userName is not null 
    useEffect(()=>{
     if(userNotExist && userName !== null){
-        // split the name when its to long, for UI show 
-        // purpuse, but anyway the original name its going 
-        // to be save in the API data
-        let splittedName = userName.split(' ')
         //then register user
         registerUser(userName)
         //alert
         alert(`user ${userName} is now registered`)
         //set user name, the first of the array of strings
-        setUser(splittedName[0])
+        setUser(userName)
         //login
         setLogin(true)
         //set user to session in local storage
@@ -140,9 +131,7 @@ function registerUser(newUser){
 
 // managed local storage for sessions
 function managedSessions(credential){
-    // split the name when its to long, for UI show 
-    // purpuse, but anyway the original name its going 
-    // to be save in the API data
-    let splittedName = credential.split(' ')
-    localStorage.setItem('username', splittedName[0])
+    //populate local storage with a key value pair 
+    //to be able to retrieve when need it
+    localStorage.setItem('username', credential)
 }

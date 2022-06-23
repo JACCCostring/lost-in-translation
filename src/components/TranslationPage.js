@@ -30,7 +30,6 @@ export default function TranslationPage()
     const [content, setContent] = useState(null)
     const [ready, setReady] = useState(false)
     const [signs, setSigns] = useState()
-    // const [userId, setUserId] = useState(0)
 
     // array for path collection
     let pathContainer = []
@@ -128,8 +127,11 @@ export default function TranslationPage()
              <Link to='/profile'>
              <img src={iconUser} className="icon-user-trans" alt=""></img>
              </Link> 
-            {/* user name */}
-            <p className="user-name-trans">{user}</p>
+            {/* user name 
+                splitting user name and take just the first name
+                to avoid so long names in the UI
+            */}
+            <p className="user-name-trans">{user.split(' ')[0]}</p>
             <p className="logout-btn-trans" onClick={logOutUser}>Log Out</p>
             <p className="icon-profile-title-trans">Profile</p>
             {/* line */}
