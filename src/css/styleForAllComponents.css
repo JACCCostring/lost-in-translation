@@ -1,0 +1,599 @@
+/* fonts */
+/* indie flower */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+/* body and global styles */
+body{
+    padding: 10%;
+}
+
+
+/* ############################ Home page styles ########################### */
+
+/*main box */
+.main-box{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    /* applying two colors */
+    background-image: linear-gradient(
+        to bottom,
+        #E7B355 0%,
+        #E7B355 55%,
+        #fff 55%,
+        #fff 100%
+    );
+    /* shadows */
+    box-shadow: gainsboro 3px 3px 3px 3px;
+    /* fonts */
+    font-family: 'Indie Flower';
+}
+/* title box */
+.main-box .title-box{
+    color: #E5E5E5;
+    /* margins */
+    margin-left: 80px;
+}
+/* icon robot */
+.main-box .icon-robot{
+    margin-left: 80px;
+    margin-top: 80px;
+}
+/* subtitle box */
+.subtitle-box{
+    /* width: 150px; */
+    color: #E5E5E5;
+    /* margins */
+    margin-left: 180px;
+    margin-top: -50px;
+    /* fonts */
+    font-size: x-large;
+    font-family: 'Indie Flower';
+    font-weight: bold;
+}
+/* content body subtitle box */
+.content-subtitle-box{
+    color: #E5E5E5;
+    /* margins */
+    margin-left: 180px;
+    margin-top: -10px;
+    /* fonts */
+    font-family: 'Indie Flower';
+}
+/* box input inside main box */
+.box-input{
+    display: flex;
+    /* splitting colors  */
+    background-image: linear-gradient(
+        to bottom,
+        #EFEFEF 0%,
+        #EFEFEF 90%,
+        #845EC2 90%,
+        #845EC2 100%
+    );
+    max-width: 70%;
+    min-width: 200px;
+    height: 100px;
+    /* margins */
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    /* positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+/* input box inside box input */
+.box-input input{
+    border: solid 1px #949494;
+    background-color: #D4D3D3;
+    min-width: 150px;
+    width: 100%;
+    height: 50%;
+    border-radius: 100px;
+    position: relative;
+    /* fonts */
+    font-size: larger;
+    color: #949494;
+    /* positioning input text */
+    /* text-align: center; */
+    padding-left: 70px;
+}
+/* button inside box input */
+.box-input button{
+    width: 50px;
+    height: 42px;
+    /* borders */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #845EC2;
+    border-radius: 100px;
+    /* colors */
+    background-color: #845EC2;
+    color: #fff;
+    /* positioning button */
+    position: relative;
+    right: 50px;
+    /* button text */
+    font-size: large;
+}
+/* whne hover button inside input */
+.box-input button:hover{
+    cursor: pointer;
+}
+/* whne active button inside input */
+.box-input button:active{
+    color: #845EC2;
+}
+/* icon keyboard inside box input */
+.icon-keyboard{
+    width: 32px;
+    height: 32px;
+    /* positioning icon */
+    position: relative;
+    left: -89%;
+}
+
+
+/* media query for home page when screen min 500px */
+@media all and (min-width: 500px){
+    /* box input inside main box */
+    .main-box{
+        width: 700px;
+    }
+} 
+/* media query for home page max 500px */
+@media all and (max-width: 500px){
+    /* box input inside main box */
+    .main-box{
+        width: 700px;
+    }
+} 
+
+
+
+/* ########################## translation page styles ######################## */
+
+
+
+
+/* main box trans */
+.main-box-trans{
+    /* display: inline-block; */
+    /* justify-content: center;
+    align-items: center; */
+    height: 600px;
+    width: 100%;
+    /* applying two colors */
+    background-image: linear-gradient(
+        to bottom,
+        #E7B355 0%,
+        #E7B355 40%,
+        #fff 40%,
+        #fff 100%
+    );
+    /* shadows */
+    box-shadow: gainsboro 3px 3px 3px 3px;
+    /* fonts */
+    font-family: 'Indie Flower';
+}
+/* icon robot */
+.icon-robot-trans{
+    /* dimensions size*/
+    width: 42px;
+    height: 42px;
+    /* margins */
+    margin-left: 5%;
+    margin-top: 2%;
+}
+/* title box trans */
+.title-box-trans{
+    display: inline;
+    color: #E5E5E5;
+    /* fonts */
+    font-size: x-large;
+    font-family: 'Indie Flower';
+}
+/* style for texbox input */
+.main-box-trans input{
+    border: solid 1px #EFEFEF;
+    background-color: #D4D3D3;
+    max-width: 100%;
+    width: 400px;
+    height: 50px;
+    border-radius: 100px;
+    margin-left: 15%;
+    margin-right: auto;
+    margin-top: 30px;
+    /* position: relative; */
+    /* fonts */
+    font-size: larger;
+    color: #949494;
+    /* positioning input text */
+    /* text-align: center; */
+    padding-left: 70px;
+}
+/* style for button in trans page */
+.main-box-trans button{
+    width: 50px;
+    height: 42px;
+    /* borders */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #845EC2;
+    border-radius: 100px;
+    /* colors */
+    background-color: #845EC2;
+    color: #fff;
+    /* positioning button */
+    position: relative;
+    right: 50px;
+    /* button text */
+    font-size: large;
+}
+/* whne hover button in trans page */
+.main-box-trans button:hover{
+    cursor: pointer;
+}
+/* whne active button in trans page */
+.main-box-trans button:active{
+    color: #845EC2;
+}
+/* icon robot */
+.main-box-trans .icon-keyboard-trans{
+    width: 32px;
+    height: 32px;
+    /* positioning icon */
+    position: relative;
+    left: -500px;
+    top: 7px;
+}
+/* icon user trans style  */
+.icon-user-trans{
+    width: 40px;
+    height: 50px;
+    position: relative;
+    left: 280px;
+    top: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.276);
+    border-radius: 50px;
+    /* margin to keep icon user away */
+    margin-left: 3%;
+}
+/* user name trans */
+.user-name-trans{
+    position: relative;
+    left: 480px;
+    top: -55px;
+    border: solid 1px rgba(255, 255, 255, 0.276);
+    border-radius: 20px;
+    width: 10%;
+    padding-left: 2px;
+    /* fonts */
+    font-family: 'Indie Flower';
+    color: #EFEFEF;
+}
+/* logout btn trans */
+.logout-btn-trans{
+    position: relative;
+    left: 480px;
+    top: -70px;
+    /* border: solid 1px rgba(255, 255, 255, 0.276); */
+    border-radius: 20px;
+    width: 10%;
+    padding-left: 2px;
+    /* fonts */
+    font-family: 'Indie Flower';
+    font-size: small;
+    color: #131313;
+}
+/* icon text profile  */
+.icon-profile-title-trans{
+    position: relative;
+    left: 560px;
+    top: -90px;
+    border-radius: 20px;
+    width: 10%;
+    padding-left: 2px;
+    /* fonts */
+    font-family: 'Indie Flower';
+    font-size: small;
+    color: #131313;
+}
+/* logout btn trans when hover */
+.logout-btn-trans:hover{
+    background-color: #6363630e;
+    /* border: solid 1px rgba(255, 255, 255, 0.276); */
+    cursor: pointer;
+}
+/* logout btn trans when active */
+.logout-btn-trans:active{
+    background-color: #e5e5e5b6;
+}
+/* hr splitter trans */
+.main-box-trans hr{
+    margin-top: -15%;
+    opacity: 0.3;
+}
+.output-result-box-trans{
+    /* dimensions */
+    height: 200px;
+    width: 80%;
+    background-image: linear-gradient(
+        to bottom,
+        white 0%,
+        white 90%,
+        #845EC2 90%,
+        #845EC2 100%
+    );
+    /* postiioning */
+    margin-top: 160px;
+    margin-left: 75px;
+    /* shape */
+    border-radius: 20px;
+
+    /* shadow */
+    box-shadow: gainsboro 3px 3px 3px 3px;
+    /* make it scroll */
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/* signs images trans */
+.output-result-box-trans .signs-trans{
+    width: 32px;
+    height: 32px;
+}
+
+/* small text at the corner of output box */
+.output-result-box-trans .text-corner-trans{
+    /* dimensions */
+    width: 65px;
+    height: 15px;
+    /* color */
+    color: #636363;
+    background-color: #D9D9D9;
+    /* border */
+    border-radius: 10px;
+    /* positioning */
+    /* position: absolute;
+    top: 608px;
+    bottom: 0px;
+    left: 175px; */
+    position: sticky;
+    top: 280px;
+    bottom: 0px;
+    left: 20px;
+    /* display: flex; */
+    margin-bottom: 2px;
+    margin-left: 10px;
+    /* font */
+    font-size: small;
+}
+
+.output-result-box-trans, .icon-user-trans:hover{
+    background-color: #6363630e;
+}
+/* icon user trans when click */
+.output-result-box-trans, .icon-user-trans:active{
+    background-color: #85827c17;
+}
+
+
+
+
+/* media query for trans page when screen min 500px*/
+@media all and (min-width: 500px){
+    /* box input inside main box */
+    .main-box-trans{
+        width: 700px;
+    }
+} 
+/* media query for trans page when screen max 500px*/
+@media all and (max-width: 500px){
+    /* box input inside main box */
+    .main-box-trans{
+        width: 700px;
+    }
+} 
+
+
+
+/* ########################## Profile page styles ######################## */
+
+
+
+/* main box profile */
+.main-box-profile{
+    height: 600px;
+    width: 100%;
+    /* applying two colors */
+    background-image: linear-gradient(
+        to bottom,
+        #E7B355 0%,
+        #E7B355 40%,
+        #fff 40%,
+        #fff 100%
+    );
+    /* shadows */
+    box-shadow: gainsboro 3px 3px 3px 3px;
+    /* fonts */
+    font-family: 'Indie Flower';
+}
+/* icon robot */
+.icon-robot-profile{
+    /* dimensions size*/
+    width: 42px;
+    height: 42px;
+    /* margins */
+    margin-left: 5%;
+    margin-top: 2%;
+}
+/* title box profile */
+.title-box-profile{
+    display: inline;
+    color: #E5E5E5;
+    /* fonts */
+    font-size: x-large;
+    font-family: 'Indie Flower';
+}
+/* icon user profile style  */
+.icon-back-profile{
+    width: 40px;
+    height: 50px;
+    position: relative;
+    left: 220px;
+    top: 10px;
+    /* border: solid 1px rgba(255, 255, 255, 0.276); */
+    border-radius: 50px;
+    /* margin to keep icon user away */
+    margin-left: 0%;
+}
+/* user name profile */
+.user-name-profile{
+    position: relative;
+    left: 480px;
+    top: -55px;
+    border: solid 1px rgba(255, 255, 255, 0.276);
+    border-radius: 20px;
+    width: 10%;
+    padding-left: 2px;
+    /* fonts */
+    font-family: 'Indie Flower';
+    color: #EFEFEF;
+}
+/* logout btn profile */
+.logout-btn-profile{
+    position: relative;
+    left: 480px;
+    top: -70px;
+    /* border: solid 1px rgba(255, 255, 255, 0.276); */
+    border-radius: 20px;
+    width: 10%;
+    padding-left: 2px;
+    /* fonts */
+    font-family: 'Indie Flower';
+    font-size: small;
+    color: #131313;
+}
+/* profback btn ile text for icon back */
+.icon-profile-title-profile{
+    position: relative;
+    left: 565px;
+    top: -95px;
+    border-radius: 20px;
+    width: 10%;
+    padding-left: 2px;
+    /* fonts */
+    font-family: 'Indie Flower';
+    font-size: small;
+    color: #131313;
+}
+/* logout btn profile when hover */
+.logout-btn-profile:hover{
+    background-color: #6363630e;
+    /* border: solid 1px rgba(255, 255, 255, 0.276); */
+    cursor: pointer;
+}
+/* logout btn profile when active */
+.logout-btn-profile:active{
+    background-color: #e5e5e5b6;
+}
+/* hr splitter profile */
+.main-box-profile hr{
+    margin-top: -10%;
+    opacity: 0.3;
+}
+/* icon user profile when hover */
+.main-box-profile .icon-back-profile:hover{
+    background-color: #6363630e;
+    cursor: pointer;
+}
+/* icon user profile when click */
+.main-box-profile, .icon-back-profile:active{
+    background-color: #85827c17;
+}
+/* title box profile*/
+.main-box-profile .title-box-profile{
+    color: #E5E5E5;
+    /* margins */
+    margin-left: 80px;
+}
+/* icon robot */
+.main-box-profile .icon-robot-profile-sub{
+    width: 90px;
+    height: 70px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+/* subtitle box */
+.subtitle-box-profile{
+    /* width: 150px; */
+    color: #E5E5E5;
+    /* margins */
+    margin-left: 180px;
+    margin-top: -50px;
+    /* fonts */
+    font-size: x-large;
+    font-family: 'Indie Flower';
+    font-weight: bold;
+}
+/* output profile box */
+.output-box-profile{
+    /* border: solid 1px black; */
+    margin-top: 10%;
+    padding: 70px;
+    width: 80%;
+    height: 30%;
+    /* make it scrollable */
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+/* output box profile title */
+.output-box-profile .output-box-pro-title{
+    /* fonts */
+    font-size: x-large;
+    font-family: 'Indie Flower';
+    font-weight: bold;
+}
+/* button clear translation profile */
+.btn-clear-profile{
+    /* position */
+    position: relative;
+    bottom: 23px;
+    right: -590px;
+    /* borders */
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* fonts */
+    font-family: 'Indie Flower';
+}
+/* button clear translation profile when hover*/
+.btn-clear-profile:hover{
+   cursor: pointer;
+   border-color: #E7B355;
+}
+/* hr splitter trans */
+.main-box-profile hr{
+    margin-top: -15%;
+    opacity: 0.3;
+}
+/* media query for home page when screen min 500px */
+@media all and (min-width: 500px){
+    /* box input inside main box */
+    .main-box-profile{
+        width: 700px;
+    }
+} 
+/* media query for home page max 500px */
+@media all and (max-width: 500px){
+    /* box input inside main box */
+    .main-box-profile{
+        width: 700px;
+    }
+} 

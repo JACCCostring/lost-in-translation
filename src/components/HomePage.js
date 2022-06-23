@@ -34,6 +34,11 @@ export default function HomePage()
     // function called when click event happens
     function authenticateUser()
     {
+        // split the name when its to long, for UI show 
+        // purpuse, but anyway the original name its going 
+        // to be save in the API data
+        let splittedName = userName.split(' ')
+
        fetch(usersEndPoint)
        .then(data => data.json())
        .then(jsData => {
@@ -43,8 +48,8 @@ export default function HomePage()
             if(userName === field.username){
                 // name exist in API data
                 alert(`user ${userName} is already registered`);
-                // set user name
-                setUser(userName)
+                //set user name, the first of the array of strings
+                setUser(splittedName[0])
                 //login
                 setLogin(true)
                 //set user to session
@@ -62,12 +67,16 @@ export default function HomePage()
    //and userName is not null 
    useEffect(()=>{
     if(userNotExist && userName !== null){
+        // split the name when its to long, for UI show 
+        // purpuse, but anyway the original name its going 
+        // to be save in the API data
+        let splittedName = userName.split(' ')
         //then register user
         registerUser(userName)
         //alert
         alert(`user ${userName} is now registered`)
-        //set user name
-        setUser(userName)
+        //set user name, the first of the array of strings
+        setUser(splittedName[0])
         //login
         setLogin(true)
         //set user to session in local storage
