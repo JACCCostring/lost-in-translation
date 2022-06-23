@@ -140,5 +140,9 @@ function registerUser(newUser){
 
 // managed local storage for sessions
 function managedSessions(credential){
-    localStorage.setItem('username', credential)
+    // split the name when its to long, for UI show 
+    // purpuse, but anyway the original name its going 
+    // to be save in the API data
+    let splittedName = credential.split(' ')
+    localStorage.setItem('username', splittedName[0])
 }
