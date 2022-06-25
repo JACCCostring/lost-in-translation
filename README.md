@@ -1,4 +1,4 @@
-Lost in Translation Single Page Application
+<h1>Lost in Translation Single Page Application</h1>
 
 It's a Web App that allows any user to translate from English to American Sign Language,
 it doesn't allow the majority of special keys and only lowercase plain text words.
