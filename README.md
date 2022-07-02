@@ -13,7 +13,7 @@ Any user information or data save is made with the help of an API implemented by
 ![image](https://user-images.githubusercontent.com/93591202/174835883-0d53eb90-9c9f-4e65-a2aa-40a16f179f63.png)
 
                                           Translation Page
-![image](https://user-images.githubusercontent.com/93591202/174836001-7f731250-66a8-4734-b445-1fa6fedd2772.png)
+![image](https://user-images.githubusercontent.com/93591202/177000246-b9665c0a-bc02-4b60-8039-5f3b3ca2ffe8.png)
                                           
                                           Profile Page
 ![image](https://user-images.githubusercontent.com/93591202/174835945-163fc2ff-227d-493e-b470-4e5c35dcb5bb.png)
