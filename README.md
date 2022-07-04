@@ -19,3 +19,7 @@ Any user information or data save is made with the help of an API implemented by
 ![image](https://user-images.githubusercontent.com/93591202/174835945-163fc2ff-227d-493e-b470-4e5c35dcb5bb.png)
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+App is already deploy in Heroku for testing
+
+https://frozen-oasis-95120.herokuapp.com
